@@ -1,4 +1,4 @@
-. Elicitação e Análise de Requisitos
+Elicitação e Análise de Requisitos
 Definição: Elicitação de requisitos é o processo de determinar as expectativas dos usuários para um novo ou modificado produto. Essa atividade é crucial para o sucesso do projeto, pois visa coletar detalhes sobre os requisitos do sistema.
 Exemplo: Num projeto de software para um banco, a elicitação de requisitos pode incluir entrevistas com stakeholders para descobrir funcionalidades como transferências bancárias, consulta de saldos e emissão de extratos.
 Introdução
