@@ -1,4 +1,4 @@
-Elicitação e Análise de Requisitos
+**Elicitação e Análise de Requisitos**
 
 Elicitação e Análise de Requisitos são atividades fundamentais no processo de desenvolvimento de software, que visam entender e documentar as necessidades dos stakeholders para o sistema a ser desenvolvido. Essas atividades são essenciais para garantir que o software atenda aos requisitos funcionais e não funcionais, resultando em um produto final que seja útil, utilizável e de alta qualidade.
 
