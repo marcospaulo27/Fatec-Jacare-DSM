@@ -1,4 +1,4 @@
-**Elicitação e Análise de Requisitos**
+***Elicitação e Análise de Requisitos***
 
 Elicitação e Análise de Requisitos são atividades fundamentais no processo de desenvolvimento de software, que visam entender e documentar as necessidades dos stakeholders para o sistema a ser desenvolvido. Essas atividades são essenciais para garantir que o software atenda aos requisitos funcionais e não funcionais, resultando em um produto final que seja útil, utilizável e de alta qualidade.
 
@@ -115,7 +115,7 @@ Por fim, apresentamos um mapa mental para facilitar a memorização e organizaç
 ![image](https://github.com/marcospaulo27/Fatec-Jacarei-DSM/assets/51270512/20610831-8aa6-46df-92b7-b004974da0d6)
 
 
-2. Gerenciar o Escopo na Elicitação de Requisitos
+***Gerenciar o Escopo na Elicitação de Requisitos***
 
 Gerenciar o escopo na elicitação de requisitos é uma atividade crucial na gestão de projetos de software, que envolve definir e controlar o que está incluído e o que está excluído no projeto. Este processo ajuda a assegurar que o projeto mantenha seu foco inicial sem expandir para além do que foi originalmente planejado, prevenindo atrasos, excessos de custos e diluição dos esforços essenciais.
 Importância de Gerenciar o Escopo
