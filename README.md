@@ -127,10 +127,12 @@ Gerenciar o escopo é importante porque:
 
 Exemplos de Gerenciamento de Escopo na Elicitação de Requisitos
 
-1. Desenvolvimento de um Site de Comércio Eletrônico: No início do projeto, o escopo inclui funcionalidades básicas como listagem de produtos, carrinho de compras, e processamento de pagamentos. Durante a elicitação de requisitos, surgem pedidos para adicionar um sistema de recomendação de produtos e suporte para múltiplas moedas e idiomas. Gerenciar o escopo neste caso envolveria decidir se essas funcionalidades devem ser desenvolvidas na fase inicial ou se podem ser planejadas para futuras atualizações. Sem um gerenciamento de escopo eficaz, essas adições poderiam levar a atrasos significativos e aumento de custos.
-2. Sistema de Registro de Pacientes para um Hospital: Inicialmente, o escopo do projeto pode incluir requisitos para coleta de dados demográficos dos pacientes, histórico médico, e agendamentos. Se durante a fase de elicitação de requisitos forem sugeridas funcionalidades adicionais como integração com sistemas de seguro saúde ou módulos de telemedicina, o gerenciamento de escopo ajudaria a determinar se esses elementos são essenciais para a entrega inicial ou se podem ser implementados posteriormente, mantendo o projeto dentro do tempo e do orçamento planejados.
-3. Desenvolvimento de um Aplicativo Móvel de Jogos: O escopo original pode incluir mecânicas de jogo, gráficos básicos, e suporte para uma plataforma. Se, durante a elicitação, os stakeholders desejarem adicionar suporte para múltiplas plataformas, conquistas online e integrações com redes sociais, o gerenciamento de escopo é necessário para decidir se essas características devem ser priorizadas agora ou podem ser parte de atualizações futuras.
+. Desenvolvimento de um Site de Comércio Eletrônico: No início do projeto, o escopo inclui funcionalidades básicas como listagem de produtos, carrinho de compras, e processamento de pagamentos. Durante a elicitação de requisitos, surgem pedidos para adicionar um sistema de recomendação de produtos e suporte para múltiplas moedas e idiomas. Gerenciar o escopo neste caso envolveria decidir se essas funcionalidades devem ser desenvolvidas na fase inicial ou se podem ser planejadas para futuras atualizações. Sem um gerenciamento de escopo eficaz, essas adições poderiam levar a atrasos significativos e aumento de custos.
+. Sistema de Registro de Pacientes para um Hospital: Inicialmente, o escopo do projeto pode incluir requisitos para coleta de dados demográficos dos pacientes, histórico médico, e agendamentos. Se durante a fase de elicitação de requisitos forem sugeridas funcionalidades adicionais como integração com sistemas de seguro saúde ou módulos de telemedicina, o gerenciamento de escopo ajudaria a determinar se esses elementos são essenciais para a entrega inicial ou se podem ser implementados posteriormente, mantendo o projeto dentro do tempo e do orçamento planejados.
+. Desenvolvimento de um Aplicativo Móvel de Jogos: O escopo original pode incluir mecânicas de jogo, gráficos básicos, e suporte para uma plataforma. Se, durante a elicitação, os stakeholders desejarem adicionar suporte para múltiplas plataformas, conquistas online e integrações com redes sociais, o gerenciamento de escopo é necessário para decidir se essas características devem ser priorizadas agora ou podem ser parte de atualizações futuras.
+
 Estratégias para Gerenciar o Escopo
+
 •	Documentação clara: Manter uma documentação precisa e detalhada de todos os requisitos acordados.
 •	Comunicação efetiva: Assegurar que todas as partes interessadas estejam alinhadas e compreendam o escopo do projeto.
 •	Controle de mudanças rigoroso: Implementar um processo formal para gerenciar mudanças de escopo, exigindo justificativa e aprovação antes de qualquer alteração.
@@ -148,15 +150,20 @@ Importância dos Requisitos Funcionais
 
 Exemplos de Requisitos Funcionais
 
-1. Sistema de Comércio Eletrônico:
+Sistema de Comércio Eletrônico:
+   
 •	Funcionalidade de Carrinho de Compras: O sistema deve permitir que os usuários adicionem produtos ao carrinho de compras, ajustem quantidades, removam itens ou esvaziem o carrinho.
 •	Processamento de Pagamento: O sistema deve aceitar vários métodos de pagamento, incluindo cartões de crédito, PayPal e transferências bancárias.
 •	Registro e Autenticação de Usuário: O sistema deve permitir que os usuários criem uma conta pessoal usando um endereço de e-mail e senha. Os usuários devem ser capazes de recuperar senhas esquecidas através de um processo de recuperação via e-mail.
-2. Aplicativo Bancário:
+
+Aplicativo Bancário:
+   
 •	Consulta de Saldo: Os usuários devem ser capazes de visualizar o saldo atual de todas as contas bancárias associadas.
 •	Transferência de Dinheiro: O sistema deve permitir aos usuários fazer transferências internas e externas, configurar transferências recorrentes e cancelar transações pendentes.
 •	Pagamento de Contas: Os usuários devem poder pagar contas cadastradas, adicionar novos pagadores e agendar pagamentos futuros.
-3. Sistema de Gerenciamento de Recursos Humanos:
+
+Sistema de Gerenciamento de Recursos Humanos:
+   
 •	Gerenciamento de Folha de Pagamento: O sistema deve calcular automaticamente o salário dos funcionários com base nas horas trabalhadas, impostos e outros descontos.
 •	Gerenciamento de Férias: O sistema deve permitir que os funcionários solicitem férias, visualizem dias de férias restantes e acompanhem o status de suas solicitações.
 •	Avaliação de Desempenho: O sistema deve permitir a realização de avaliações de desempenho, incluindo a submissão de feedback de funcionários e supervisores.
@@ -166,7 +173,7 @@ Estratégias para Definir Requisitos Funcionais
 •	Revisões e Inspeções: Regularmente revisar os requisitos funcionais com os stakeholders para garantir que permaneçam relevantes e precisos ao longo do projeto.
 Esses exemplos e estratégias ajudam a ilustrar como os requisitos funcionais são fundamentais para desenvolver um sistema que atenda às necessidades específicas dos usuários e do negócio.
 
-4. Requisitos Não Funcionais
+Requisitos Não Funcionais
    
 Requisitos não funcionais referem-se a critérios que podem ser usados para julgar a operação de um sistema, ao contrário das funcionalidades específicas que ele realiza. Estes requisitos definem como o sistema deve ser ao invés do que ele deve fazer, cobrindo aspectos como desempenho, segurança, usabilidade, confiabilidade, entre outros. Eles são vitais para garantir a qualidade do software e a satisfação do usuário, influenciando diretamente a experiência de uso do sistema.
 
@@ -177,49 +184,71 @@ Importância dos Requisitos Não Funcionais
 •	Ajudam na diferenciação do produto: Podem ser um fator decisivo na escolha de um software, especialmente em mercados competitivos onde a funcionalidade básica é similar entre diferentes produtos.
 
 Exemplos de Requisitos Não Funcionais
-1. Desempenho:
+
+. Desempenho:
+
 •	Tempo de Resposta: O sistema deve responder às interações do usuário em não mais de 2 segundos para 95% das solicitações.
 •	Capacidade: O sistema deve suportar até 10.000 usuários simultâneos sem degradação significativa da performance.
-2. Segurança:
+
+. Segurança:
+
 •	Criptografia: Todas as transações financeiras devem ser criptografadas usando padrões de criptografia AES de 256 bits.
 •	Controle de Acesso: O sistema deve implementar controle de acesso baseado em roles, onde diferentes níveis de usuário têm permissões específicas.
-3. Usabilidade:
+
+. Usabilidade:
+
 •	Acessibilidade: O sistema deve ser acessível de acordo com as diretrizes WCAG 2.1, nível AA, permitindo que pessoas com diferentes tipos de deficiência o utilizem eficazmente.
 •	Interface do Usuário: A interface do usuário deve ser intuitiva e fácil de navegar, permitindo que novos usuários se familiarizem com as funcionalidades básicas em no máximo 30 minutos.
-4. Confiabilidade:
+. Confiabilidade:
+
 •	Disponibilidade: O sistema deve ter uma disponibilidade de 99.9% durante horários de pico.
 •	Recuperação de Desastres: O sistema deve ser capaz de recuperar-se de um falha completa em menos de 4 horas com perda de dados não superior a 1 minuto de transações.
-5. Manutenibilidade:
+
+. Manutenibilidade:
+
 •	Atualizações: O sistema deve permitir atualizações sem interrupção do serviço por mais de 1 minuto.
 •	Modularidade: O software deve ser altamente modular para facilitar a manutenção e futuras atualizações.
+
 Estratégias para Definir Requisitos Não Funcionais
+
 •	Documentação Clara: Descrever detalhadamente os requisitos não funcionais em documentos de especificação para evitar ambiguidades.
 •	Benchmarking e Padrões: Utilizar benchmarks da indústria e seguir padrões reconhecidos para definir e medir os requisitos não funcionais.
 •	Testes e Validação: Planejar e executar testes específicos para validar se os requisitos não funcionais estão sendo cumpridos durante o desenvolvimento e antes do lançamento.
 Os requisitos não funcionais são cruciais para assegurar que o software atenda às expectativas de qualidade, eficiência, segurança e outros critérios vitais para o sucesso e a aceitação do sistema pelos usuários finais.
 
-5. Processos de Desenvolvimento de Software
+. Processos de Desenvolvimento de Software
 
 Processos de Desenvolvimento de Software referem-se aos métodos e práticas adotados para a criação e manutenção de software. Esses processos incluem uma série de passos e atividades, que variam de acordo com o modelo de desenvolvimento escolhido, com o objetivo de garantir que o software final atenda às necessidades dos usuários e esteja livre de defeitos graves. O processo de desenvolvimento também abrange a identificação de requisitos, design, programação, testes, implementação e manutenção do software.
 
 Exemplos de Modelos de Processos de Desenvolvimento de Software:
 
-1. Modelo Cascata (Waterfall):
+. Modelo Cascata (Waterfall):
+
 •	Características: Este é um dos modelos mais antigos e simples, onde o processo de desenvolvimento segue uma sequência linear de etapas: requisitos, design, implementação, verificação e manutenção. Cada fase deve ser completada antes de passar para a próxima.
 •	Exemplo de Uso: Ideal para projetos pequenos e bem definidos, onde requisitos não são esperados para mudar, como em sistemas de controle industrial.
-2. Desenvolvimento Ágil:
+
+ Desenvolvimento Ágil:
+   
 •	Características: Métodos ágeis enfatizam a entrega rápida, flexibilidade, comunicação contínua e colaboração entre todas as partes interessadas. Os projetos são divididos em ciclos curtos de trabalho, chamados sprints, que permitem ajustes frequentes ao longo do desenvolvimento.
 •	Exemplo de Uso: Amplamente usado em ambientes dinâmicos como startups de tecnologia e desenvolvimento de apps, onde o mercado e as necessidades dos usuários podem mudar rapidamente.
-3. Modelo V:
+
+ Modelo V:
+
 •	Características: Semelhante ao modelo cascata, mas inclui um forte foco em testes em cada etapa do desenvolvimento. As etapas de testes são planejadas em paralelo com as etapas correspondentes de desenvolvimento.
 •	Exemplo de Uso: Usado em projetos onde a qualidade e a segurança são críticas, como no desenvolvimento de software para sistemas médicos ou automotivos.
-4. Desenvolvimento Iterativo e Incremental:
+
+ Desenvolvimento Iterativo e Incremental:
+   
 •	Características: Combina elementos dos modelos cascata e ágil, onde o projeto é dividido em uma série de mini-projetos incrementais. Cada incremento passa por suas próprias fases de requisitos, design, implementação e testes.
 •	Exemplo de Uso: Útil em projetos de grande escala que necessitam de feedback regular e onde o produto final é esperado para evoluir ao longo do tempo.
-5. DevOps:
+
+ DevOps:
+
 •	Características: Enfatiza a colaboração contínua entre desenvolvedores de software e operações de TI, com o objetivo de automatizar o processo de desenvolvimento de software e infraestrutura. Isso é feito através da integração contínua (CI) e entrega contínua (CD).
 •	Exemplo de Uso: Utilizado em ambientes que requerem lançamentos rápidos e frequentes, como serviços online e aplicativos móveis.
+
 Estratégias para Implementação de Processos
+
 •	Treinamento e Adoção: Assegurar que todos os envolvidos compreendam e estejam comprometidos com o processo escolhido.
 •	Ferramentas Adequadas: Utilizar ferramentas que suportem o processo de desenvolvimento, como sistemas de controle de versão, plataformas de CI/CD, e software de gestão de projetos.
 •	Avaliação e Ajustes: Avaliar regularmente a eficácia do processo de desenvolvimento e fazer ajustes conforme necessário para melhorar a eficiência e a qualidade do produto final.
