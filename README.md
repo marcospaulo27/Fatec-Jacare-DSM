@@ -1,4 +1,4 @@
-***Elicitação e Análise de Requisitos***
+****Elicitação e Análise de Requisitos****
 
 Elicitação e Análise de Requisitos são atividades fundamentais no processo de desenvolvimento de software, que visam entender e documentar as necessidades dos stakeholders para o sistema a ser desenvolvido. Essas atividades são essenciais para garantir que o software atenda aos requisitos funcionais e não funcionais, resultando em um produto final que seja útil, utilizável e de alta qualidade.
 
@@ -115,7 +115,7 @@ Por fim, apresentamos um mapa mental para facilitar a memorização e organizaç
 ![image](https://github.com/marcospaulo27/Fatec-Jacarei-DSM/assets/51270512/20610831-8aa6-46df-92b7-b004974da0d6)
 
 
-***Gerenciar o Escopo na Elicitação de Requisitos***
+*****Gerenciar o Escopo na Elicitação de Requisitos****
 
 Gerenciar o escopo na elicitação de requisitos é uma atividade crucial na gestão de projetos de software, que envolve definir e controlar o que está incluído e o que está excluído no projeto. Este processo ajuda a assegurar que o projeto mantenha seu foco inicial sem expandir para além do que foi originalmente planejado, prevenindo atrasos, excessos de custos e diluição dos esforços essenciais.
 Importância de Gerenciar o Escopo
@@ -138,7 +138,7 @@ Estratégias para Gerenciar o Escopo
 •	Controle de mudanças rigoroso: Implementar um processo formal para gerenciar mudanças de escopo, exigindo justificativa e aprovação antes de qualquer alteração.
 Gerenciar o escopo na elicitação de requisitos é, portanto, fundamental para o sucesso de qualquer projeto, ajudando a garantir que o produto final atenda às expectativas dos usuários sem exceder os recursos disponíveis.
 
-3. Requisitos Funcionais
+**** Requisitos Funcionais****
    
 Requisitos funcionais descrevem o que o sistema deve fazer, detalhando as funções e os recursos específicos que o software deve oferecer. Eles são centrais para o desenvolvimento de qualquer aplicação, pois delineiam as capacidades e comportamentos do sistema em termos de tarefas e serviços que ele deve fornecer ao usuário. Requisitos funcionais são geralmente expressos em termos de entradas, o processamento dessas entradas e as saídas esperadas.
 
@@ -173,7 +173,7 @@ Estratégias para Definir Requisitos Funcionais
 •	Revisões e Inspeções: Regularmente revisar os requisitos funcionais com os stakeholders para garantir que permaneçam relevantes e precisos ao longo do projeto.
 Esses exemplos e estratégias ajudam a ilustrar como os requisitos funcionais são fundamentais para desenvolver um sistema que atenda às necessidades específicas dos usuários e do negócio.
 
-Requisitos Não Funcionais
+****Requisitos Não Funcionais****
    
 Requisitos não funcionais referem-se a critérios que podem ser usados para julgar a operação de um sistema, ao contrário das funcionalidades específicas que ele realiza. Estes requisitos definem como o sistema deve ser ao invés do que ele deve fazer, cobrindo aspectos como desempenho, segurança, usabilidade, confiabilidade, entre outros. Eles são vitais para garantir a qualidade do software e a satisfação do usuário, influenciando diretamente a experiência de uso do sistema.
 
