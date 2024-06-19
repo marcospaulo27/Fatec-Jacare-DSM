@@ -1,0 +1,69 @@
+CREATE TABLE Jogos (
+  IDJogo INTEGER NOT NULL,
+  Time1 VARCHAR(50) NULL,
+  Time2 VARCHAR(50) NULL,
+  DataHorario TIMESTAMP NULL,
+  PRIMARY KEY(IDJogo)
+);
+
+CREATE TABLE Presenca (
+  Torcedores_idTorcedores INTEGER NOT NULL,
+  Jogos_IDJogo INTEGER NOT NULL,
+  PRIMARY KEY(Torcedores_idTorcedores, Jogos_IDJogo)
+);
+
+CREATE TABLE Torcedores (
+  idTorcedores INTEGER NOT NULL,
+  Nome VARCHAR(255) NULL,
+  CPF CHAR(11) NULL,
+  Celular CHAR(14) NULL,
+  Endereco VARCHAR(255) NULL,
+  PRIMARY KEY(idTorcedores)
+);
+
+
+select * from jogos;
+select * from presenca;
+select * from torcedores;
+
+
+INSERT INTO Torcedores (IdTorcedores, Nome, CPF, Celular, Endereco)
+VALUES 
+(1,  'José', '12345678900', '(12)99781-1111', 'Rua 1, Jd. Aquárius-SJC'),
+(2,  'João', '45678912399', '(12)98142-2222', 'Rua 2, Jd. Das Indústrias-SJC'),
+(3,  'Maria', '78912345666', '(12)99185-3333', 'Rua 3, Santa Maria-Jacareí'),
+(4,  'Ana', '15948672633', '(12)99999-4444', 'Rua 4, Rio Cumprido-Jacareí'),
+(5,  'Mateus', '98765432122', '(12)98989-5555', 'Rua 5, Cidade Salvador-Jacareí'),
+(6,  'Manoel', '75242986111', '(12)99784-5555', 'Rua 6, Urbanova-SJC');
+
+INSERT INTO Jogos (IDJogo, Time1, Time2, DataHorario)
+VALUES 
+(1, 'São José', 'Flamengo', '2023-11-26 16:00:00'),
+(2, 'Taubaté', 'Corinthians', '2023-11-25 21:30:00'),
+(3, 'Guará', 'Palmeiras', '2023-11-26 18:30:00'),
+(4, 'São Paulo', 'Manchester City', '2023-12-22 15:00:00');
+
+INSERT INTO Presenca (Torcedores_idTorcedores,Jogos_IDJogo )
+VALUES	
+(1,1),
+(2,2),
+(3,1),
+(4,2),
+(5,3),
+(6,4),
+(1,2),
+(2,1);
+
+select * from torcedores as t, jogos as j, presenca as p
+where t .idtorcedores = p . torcedores_idtorcedores and 
+p . jogos_idjogo = j.idjogo;
+
+select t . nome from torcedores as t, jogos as j, presenca as p
+where t .idtorcedores = p .torcedores_idtorcedores and 
+p . jogos_idjogo = j .idjogo and j.time1 = 'São Jose';
+
+update jogos set time2 = 'São José' where idjogo  = 2;
+
+select distinct(t.nome) from torcedores as t, jogos as j, presenca as p
+where t. idtorcedores = p .torcedores_idtorcedores and	
+p . jogos_idjogo = j .idjogo and (j.time1 = 'São Jose' or j.time2 = 'São José');
