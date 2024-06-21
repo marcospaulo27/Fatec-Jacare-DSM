@@ -97,6 +97,8 @@ CREATE TABLE Torcedores (
   PRIMARY KEY(idTorcedores)
 );
 
+Relacionamento das tabelas: Torcedores e Presenca: N p N
+Presenca e Jogos: N p N
 
 select * from jogos;
 select * from presenca;
