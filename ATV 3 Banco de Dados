@@ -1,3 +1,79 @@
+1 – Considere a necessidade de criar um BD para armazenar os torcedores que comparecem a determinados jogos. O modelo
+deverá atender as três formas normais. Considere que:
+
+ O BD deverá conter cadastro de torcedores e de jogos;
+ Um torcedor pode ir a vários jogos;
+ Cada jogo pode ter vários torcedores;
+ Cada jogo possui uma data/horário de início (mas não há necessidade de registrar o seu término);
+ Cada torcedor terá somente um número de celular cadastrado;
+ Cada torcedor terá somente um endereço cadastrado, sendo que não há necessidade de separar por rua, bairro,
+cidade, etc;
+ Todos os campos do modelo são obrigatórios (não podem possuir valor NULL);
+ Não há necessidade de armazenar o local do jogo e nem o placar final;
+ O BD deverá conter todas informações contidas na tabela abaixo:
+
+IDTorcedor Nome CPF Celular Endereco IDJogo Time1 Time2 DataHorario
+1 José 123456789-
+00
+(12)99781-
+1111
+Rua 1, Jd. AquáriusSJC 1 São
+José Flamengo 26/11/2023
+16:00
+2 João 456789123-
+99
+(12)98142-
+2222
+Rua 2, Jd. Das
+Indústris-SJC 2 Taubaté Corinthians 25/11/2023
+21:30
+3 Maria 789123456-
+66
+(12)99185-
+3333
+Rua 3, Santa MariaJacareí 1 São
+José Flamengo 26/11/2023
+16:00
+4 Ana 159486726-
+33
+(12)99999-
+4444
+Rua 4, Rio CumpridoJacareí 2 Taubaté Corinthians 25/11/2023
+21:30
+5 Mateus 987654321-
+22
+(12)98989-
+5555
+Rua 5, Cidade
+Salvador-Jacareí 3 Guará Palmeiras 26/11/2023
+18:30
+6 Manoel 752429861-
+11
+(12)99784-
+5555 Rua 6, Urbanova-SJC 4 São
+Paulo
+Machester
+City
+22/12/2023
+15:00
+1 José 123456789-
+00
+(12)99781-
+1111
+Rua 1, Jd. AquáriusSJC 2 Taubaté Corinthians 25/11/2023
+21:30
+2 João 456789123-
+99
+(12)98142-
+2222
+Rua 2, Jd. Das
+Indústris-SJC 1 São
+José Flamengo 26/11/2023
+16:00
+
+
+
+
 CREATE TABLE Jogos (
   IDJogo INTEGER NOT NULL,
   Time1 VARCHAR(50) NULL,
@@ -58,12 +134,97 @@ select * from torcedores as t, jogos as j, presenca as p
 where t .idtorcedores = p . torcedores_idtorcedores and 
 p . jogos_idjogo = j.idjogo;
 
+\\ SELECT *: 
+Esta cláusula indica que queremos selecionar todas as colunas de todas as tabelas envolvidas na consulta.
+FROM torcedores AS t, jogos AS j, presenca AS p:
+
+\\ Especifica as tabelas que estamos consultando.
+torcedores é referenciada como t.
+jogos é referenciada como j.
+presenca é referenciada como p.
+
+\\ WHERE:
+Especifica as condições que os registros devem atender para serem incluídos no resultado.
+t.idtorcedores = p.torcedores_idtorcedores:
+
+\\ Esta condição junta a tabela torcedores (t) com a tabela presenca (p), onde o campo idtorcedores da tabela torcedores é igual ao campo torcedores_idtorcedores da tabela presenca.
+AND p.jogos_idjogo = j.idjogo:
+
+\\ Esta condição junta a tabela presenca (p) com a tabela jogos (j), onde o campo jogos_idjogo da tabela presenca é igual ao campo idjogo da tabela jogos.
+
+------------------------------------------------------------------------------------------------
+
 select t . nome from torcedores as t, jogos as j, presenca as p
 where t .idtorcedores = p .torcedores_idtorcedores and 
 p . jogos_idjogo = j .idjogo and j.time1 = 'São Jose';
 
+\\SELECT t.nome:
+
+Esta cláusula indica que queremos selecionar apenas a coluna nome da tabela torcedores (referenciada como t).
+FROM torcedores AS t, jogos AS j, presenca AS p:
+
+Especifica as tabelas que estamos consultando:
+torcedores é referenciada como t.
+jogos é referenciada como j.
+presenca é referenciada como p.
+
+\\WHERE:
+
+Especifica as condições que os registros devem atender para serem incluídos no resultado.
+t.idtorcedores = p.torcedores_idtorcedores:
+
+Esta condição junta a tabela torcedores (t) com a tabela presenca (p), onde o campo idtorcedores da tabela torcedores é igual ao campo torcedores_idtorcedores da tabela presenca.
+AND p.jogos_idjogo = j.idjogo:
+
+Esta condição junta a tabela presenca (p) com a tabela jogos (j), onde o campo jogos_idjogo da tabela presenca é igual ao campo idjogo da tabela jogos.
+AND j.time1 = 'São Jose':
+
+Esta condição adicional filtra os resultados para incluir apenas os jogos onde time1 é 'São Jose'.
+
+-----------------------------------------------------------------------------------------------------
+
 update jogos set time2 = 'São José' where idjogo  = 2;
+
+
+\\ UPDATE jogos:
+
+Esta cláusula indica que queremos atualizar registros na tabela jogos.
+SET time2 = 'São José':
+
+Esta cláusula especifica a coluna a ser atualizada e o novo valor que deve ser atribuído a essa coluna.
+time2 = 'São José' significa que queremos definir o valor da coluna time2 como 'São José'.
+WHERE idjogo = 2:
+
+Esta cláusula especifica a condição que deve ser atendida para que o registro seja atualizado.
+idjogo = 2 significa que apenas o registro na tabela jogos onde idjogo é igual a 2 será atualizado.
+
+--------------------------------------------------------------------------------------------------------
 
 select distinct(t.nome) from torcedores as t, jogos as j, presenca as p
 where t. idtorcedores = p .torcedores_idtorcedores and	
 p . jogos_idjogo = j .idjogo and (j.time1 = 'São Jose' or j.time2 = 'São José');
+
+
+
+\\ SELECT DISTINCT(t.nome):
+
+Esta cláusula indica que queremos selecionar a coluna nome da tabela torcedores (referenciada como t).
+DISTINCT é usado para garantir que os nomes retornados sejam únicos, ou seja, não haja duplicatas no resultado.
+FROM torcedores AS t, jogos AS j, presenca AS p:
+
+Especifica as tabelas que estamos consultando:
+torcedores é referenciada como t.
+jogos é referenciada como j.
+presenca é referenciada como p.
+WHERE:
+
+Especifica as condições que os registros devem atender para serem incluídos no resultado.
+t.idtorcedores = p.torcedores_idtorcedores:
+
+Esta condição junta a tabela torcedores (t) com a tabela presenca (p), onde o campo idtorcedores da tabela torcedores é igual ao campo torcedores_idtorcedores da tabela presenca.
+AND p.jogos_idjogo = j.idjogo:
+
+Esta condição junta a tabela presenca (p) com a tabela jogos (j), onde o campo jogos_idjogo da tabela presenca é igual ao campo idjogo da tabela jogos.
+AND (j.time1 = 'São Jose' OR j.time2 = 'São José'):
+
+Esta condição adicional filtra os resultados para incluir apenas os jogos onde time1 é 'São Jose' ou time2 é 'São José'.
