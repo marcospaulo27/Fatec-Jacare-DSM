@@ -71,8 +71,8 @@ Indústris-SJC 1 São
 José Flamengo 26/11/2023
 16:00
 
-
-
+*Importante se errar na construção criar outro banco e fazer novamente as tabelas
+Tirou o index da tabela presença
 
 CREATE TABLE Jogos (
   IDJogo INTEGER NOT NULL,
@@ -102,6 +102,8 @@ select * from jogos;
 select * from presenca;
 select * from torcedores;
 
+Para insert into Torcedores 
+Depois do (1, é duplo espaço)
 
 INSERT INTO Torcedores (IdTorcedores, Nome, CPF, Celular, Endereco)
 VALUES 
@@ -129,6 +131,10 @@ VALUES
 (6,4),
 (1,2),
 (2,1);
+
+\\ Utilizar where não Join
+\\ Tem que dar espaço para ficar em destaque t, p
+
 
 select * from torcedores as t, jogos as j, presenca as p
 where t .idtorcedores = p . torcedores_idtorcedores and 
